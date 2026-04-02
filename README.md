@@ -110,3 +110,6 @@ No token response in Registration.
  
 ##### View Profile ` GET `
 ` /api/users/{user} `
+
+## TODO
+- Next ...
