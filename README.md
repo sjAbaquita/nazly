@@ -72,40 +72,40 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 
 
-## API
+# API
 Use Bearer Token for the Authorazation.
 No token response in Registration.
 
-### User
--email
--firstname
--lastname
--password
--password_confirmation
+## User
+- email
+- firstname
+- lastname
+- password
+- password_confirmation
 
-###### Registration `POST`
+##### Registration `POST`
 `/api/register`
--`email` (required)
--`firstname` (required)
--`lastname` (required)
--`password` (required)
--`password_confirmation` (required)
+- `email` (required)
+- `firstname` (required)
+- `lastname` (required)
+- `password` (required)
+- `password_confirmation` (required)
 
-###### Authentication `POST`
+##### Authentication `POST`
 `/api/authenticate`
--`email` (required)
--`password` (required)
+- `email` (required)
+- `password` (required)
 
-###### Logout `POST`
+##### Logout `POST`
 `/api/logout`
 
-###### Update Profile `PUT`
+##### Update Profile `PUT`
 `/api/users/{user}`
--`firstname` (optional)
--`lastname` (optional)
+- `firstname` (optional)
+- `lastname` (optional)
  
-###### Delete Profile `DELETE`
+##### Delete Profile `DELETE`
 `/api/users/{user}`
  
-###### View Profile `GET`
+##### View Profile `GET`
 `/api/users/{user}`
