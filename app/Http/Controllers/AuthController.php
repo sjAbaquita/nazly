@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 use Illuminate\Routing\Attributes\Controllers\Middleware;
 use Illuminate\Support\Facades\Auth;
 
-#[Middleware('auth:sanctum', except: ['register'])]
+#[Middleware('auth:sanctum', except: ['register', 'authenticate'])]
 class AuthController extends Controller
 {
 

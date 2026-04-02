@@ -46,6 +46,7 @@ class UserController extends Controller
     /**
      * Display the specified resource.
      */
+    #[Authorize('viewAny', User::class)]
     public function show(string $id): UserResource
     {
         return new UserResource(User::findOrFail($id));

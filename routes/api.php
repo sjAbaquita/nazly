@@ -20,9 +20,10 @@ Route::post('authenticate', [AuthController::class, 'authenticate']);
 Route::post('register', [AuthController::class, 'register']);
 Route::post('logout', [AuthController::class, 'logout']);
 
-//User Update profile
+//User
 Route::put('/users/{user}', [UserController::class, 'update']);
 Route::delete('/users/{user}', [UserController::class, 'destroy']);
+Route::get('/users/{user}', [UserController::class, 'show']);
 
 // Users
 Route::group(['prefix' => 'users'], function() {
